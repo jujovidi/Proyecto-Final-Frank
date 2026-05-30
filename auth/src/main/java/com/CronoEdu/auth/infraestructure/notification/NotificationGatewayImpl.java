@@ -3,6 +3,7 @@ package com.CronoEdu.auth.infraestructure.notification;
 import com.CronoEdu.auth.domain.model.Notificacion;
 import com.CronoEdu.auth.domain.model.gateway.NotificationGateway;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -12,7 +13,8 @@ public class NotificationGatewayImpl implements NotificationGateway {
 
     private final RestTemplate restTemplate;
 
-    private final String notificationUrl = "http://localhost:8083/api/notificacion/enviar";
+    @Value("${app.notification.url:http://localhost:8083/api/notificacion/enviar}")
+    private String notificationUrl = "http://localhost:8083/api/notificacion/enviar";
 
     @Override
     public void enviarMensaje(Notificacion notificacion) {

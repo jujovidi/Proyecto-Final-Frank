@@ -1,6 +1,6 @@
-const AUTH_API = 'http://localhost:8081/api/auth';
-const HORARIO_API = 'http://localhost:8082/api/horario/materias';
-const POMODORO_API = 'http://localhost:8084/api/pomodoro';
+var AUTH_API = typeof AUTH_API !== 'undefined' ? AUTH_API : 'http://localhost:8081/api/auth';
+var HORARIO_API = typeof HORARIO_API !== 'undefined' ? HORARIO_API : 'http://localhost:8082/api/horario/materias';
+var POMODORO_API = typeof POMODORO_API !== 'undefined' ? POMODORO_API : 'http://localhost:8084/api/pomodoro';
 
 const DIAS = ['LUNES', 'MARTES', 'MIERCOLES', 'JUEVES', 'VIERNES', 'SABADO'];
 const DIAS_LABEL = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];

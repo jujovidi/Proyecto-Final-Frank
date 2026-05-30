@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.CronoEdu.pomodoro.application.config.UseCaseConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:10:28.530Z" hostname="AAA" time="0.504">
+<testsuite name="com.CronoEdu.pomodoro.application.config.UseCaseConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-30T13:26:10.626Z" hostname="AAA" time="0.374">
   <properties/>
-  <testcase name="pomodoroUsecase_DeberiaCrearBean()" classname="com.CronoEdu.pomodoro.application.config.UseCaseConfigTest" time="0.501"/>
+  <testcase name="pomodoroUsecase_DeberiaCrearBean()" classname="com.CronoEdu.pomodoro.application.config.UseCaseConfigTest" time="0.372"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

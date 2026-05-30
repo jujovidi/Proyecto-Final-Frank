@@ -1,0 +1,127 @@
+services:
+  - type: web
+    name: cronoedu-front
+    runtime: image
+    repo: https://github.com/lucasbob/CronoEdu
+    dockerfilePath: front/Dockerfile
+    envVars:
+      - key: PORT
+        value: "8080"
+      - key: AUTH_URL
+        fromService:
+          name: cronoedu-auth
+          type: web
+          property: host
+      - key: HORARIO_URL
+        fromService:
+          name: cronoedu-horario
+          type: web
+          property: host
+      - key: POMODORO_URL
+        fromService:
+          name: cronoedu-pomodoro
+          type: web
+          property: host
+
+  - type: web
+    name: cronoedu-auth
+    runtime: image
+    repo: https://github.com/lucasbob/CronoEdu
+    dockerfilePath: auth/Dockerfile
+    envVars:
+      - key: PORT
+        value: "8081"
+      - key: SPRING_DATASOURCE_URL
+        fromService:
+          type: postgresql
+          name: cronoedu-db
+          property: connectionString
+      - key: SPRING_DATASOURCE_USERNAME
+        fromService:
+          type: postgresql
+          name: cronoedu-db
+          property: user
+      - key: SPRING_DATASOURCE_PASSWORD
+        fromService:
+          type: postgresql
+          name: cronoedu-db
+          property: password
+      - key: SPRING_JPA_SHOW_SQL
+        value: "false"
+      - key: APP_NOTIFICATION_URL
+        value: https://cronoedu-notification.onrender.com/api/notificacion/enviar
+
+  - type: web
+    name: cronoedu-horario
+    runtime: image
+    repo: https://github.com/lucasbob/CronoEdu
+    dockerfilePath: horario/Dockerfile
+    envVars:
+      - key: PORT
+        value: "8082"
+      - key: SPRING_DATASOURCE_URL
+        fromService:
+          type: postgresql
+          name: cronoedu-db
+          property: connectionString
+      - key: SPRING_DATASOURCE_USERNAME
+        fromService:
+          type: postgresql
+          name: cronoedu-db
+          property: user
+      - key: SPRING_DATASOURCE_PASSWORD
+        fromService:
+          type: postgresql
+          name: cronoedu-db
+          property: password
+      - key: SPRING_JPA_SHOW_SQL
+        value: "false"
+
+  - type: web
+    name: cronoedu-pomodoro
+    runtime: image
+    repo: https://github.com/lucasbob/CronoEdu
+    dockerfilePath: pomodoro/Dockerfile
+    envVars:
+      - key: PORT
+        value: "8084"
+      - key: SPRING_DATASOURCE_URL
+        fromService:
+          type: postgresql
+          name: cronoedu-db
+          property: connectionString
+      - key: SPRING_DATASOURCE_USERNAME
+        fromService:
+          type: postgresql
+          name: cronoedu-db
+          property: user
+      - key: SPRING_DATASOURCE_PASSWORD
+        fromService:
+          type: postgresql
+          name: cronoedu-db
+          property: password
+      - key: SPRING_JPA_SHOW_SQL
+        value: "false"
+
+  - type: web
+    name: cronoedu-notification
+    runtime: image
+    repo: https://github.com/lucasbob/CronoEdu
+    dockerfilePath: notification/Dockerfile
+    envVars:
+      - key: PORT
+        value: "8083"
+      - key: SPRING_MAIL_USERNAME
+        value: juanbobadilla0104@gmail.com
+      - key: SPRING_MAIL_PASSWORD
+        sync: false
+      - key: APP_NOTIFICATION_EMAIL_FROM
+        value: juanbobadilla0104@gmail.com
+      - key: APP_NOTIFICATION_EMAIL_ENABLED
+        value: "true"
+
+  - type: postgresql
+    name: cronoedu-db
+    plan: free
+    databaseName: CronoEdu
+    ipAllowList: []

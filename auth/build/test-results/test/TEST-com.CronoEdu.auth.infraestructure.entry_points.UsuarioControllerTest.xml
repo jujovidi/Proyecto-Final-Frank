@@ -1,63 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:14:58.727Z" hostname="AAA" time="1.939">
+<testsuite name="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-05-30T13:25:07.035Z" hostname="AAA" time="1.086">
   <properties/>
-  <testcase name="actualizar_DeberiaRetornar200_CuandoExitoso()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="1.631"/>
-  <testcase name="login_DeberiaRetornar401_CuandoCredencialesInvalidas()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.021"/>
-  <testcase name="eliminar_DeberiaRetornar400_CuandoIllegalArgument()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.02"/>
-  <testcase name="login_DeberiaRetornar500_CuandoErrorInesperado()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.021"/>
-  <testcase name="eliminar_DeberiaRetornar200_CuandoExitoso()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.024"/>
-  <testcase name="actualizar_DeberiaRetornar404_CuandoRuntimeException()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.027"/>
-  <testcase name="register_DeberiaRetornar201_CuandoExitoso()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.026"/>
-  <testcase name="buscarPorCedula_DeberiaRetornar200_CuandoExiste()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.02"/>
-  <testcase name="register_DeberiaRetornar500_CuandoErrorInesperado()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.021"/>
-  <testcase name="eliminar_DeberiaRetornar404_CuandoRuntimeException()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.021"/>
-  <testcase name="login_DeberiaRetornar200_CuandoExitoso()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.03"/>
-  <testcase name="register_DeberiaRetornar400_CuandoIllegalArgument()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.021"/>
-  <testcase name="actualizar_DeberiaRetornar400_CuandoIllegalArgument()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.025"/>
-  <testcase name="buscarPorCedula_DeberiaRetornar404_CuandoNoExiste()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.016"/>
-  <system-out><![CDATA[01:14:59.528 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:14:59.533 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:14:59.541 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 7 ms
-01:15:00.373 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.373 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.373 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
-01:15:00.395 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.395 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.395 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
-01:15:00.415 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.415 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.415 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
-01:15:00.436 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.436 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.437 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms
-01:15:00.465 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.466 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.466 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
-01:15:00.493 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.493 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.494 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
-01:15:00.518 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.518 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.518 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
-01:15:00.537 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.537 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.538 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
-01:15:00.563 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.563 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.564 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms
-01:15:00.585 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.586 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.586 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
-01:15:00.613 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.614 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.614 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
-01:15:00.635 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.636 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.637 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms
-01:15:00.661 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:15:00.661 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:15:00.662 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+  <testcase name="actualizar_DeberiaRetornar200_CuandoExitoso()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.868"/>
+  <testcase name="login_DeberiaRetornar401_CuandoCredencialesInvalidas()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.022"/>
+  <testcase name="eliminar_DeberiaRetornar400_CuandoIllegalArgument()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.022"/>
+  <testcase name="login_DeberiaRetornar500_CuandoErrorInesperado()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.017"/>
+  <testcase name="eliminar_DeberiaRetornar200_CuandoExitoso()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.014"/>
+  <testcase name="actualizar_DeberiaRetornar404_CuandoRuntimeException()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.011"/>
+  <testcase name="register_DeberiaRetornar201_CuandoExitoso()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.014"/>
+  <testcase name="buscarPorCedula_DeberiaRetornar200_CuandoExiste()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.016"/>
+  <testcase name="register_DeberiaRetornar500_CuandoErrorInesperado()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.014"/>
+  <testcase name="eliminar_DeberiaRetornar404_CuandoRuntimeException()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.013"/>
+  <testcase name="login_DeberiaRetornar200_CuandoExitoso()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.016"/>
+  <testcase name="register_DeberiaRetornar400_CuandoIllegalArgument()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.019"/>
+  <testcase name="actualizar_DeberiaRetornar400_CuandoIllegalArgument()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.017"/>
+  <testcase name="buscarPorCedula_DeberiaRetornar404_CuandoNoExiste()" classname="com.CronoEdu.auth.infraestructure.entry_points.UsuarioControllerTest" time="0.015"/>
+  <system-out><![CDATA[08:25:07.506 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:07.509 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:07.514 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 4 ms
+08:25:07.918 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:07.918 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:07.918 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+08:25:07.941 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:07.941 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:07.941 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+08:25:07.958 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:07.958 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:07.958 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+08:25:07.974 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:07.974 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:07.974 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+08:25:07.988 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:07.988 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:07.988 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+08:25:08.000 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:08.001 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:08.001 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+08:25:08.016 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:08.017 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:08.017 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+08:25:08.031 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:08.031 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:08.031 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+08:25:08.046 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:08.047 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:08.047 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+08:25:08.059 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:08.059 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:08.059 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+08:25:08.075 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:08.075 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:08.075 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+08:25:08.097 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:08.097 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:08.097 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+08:25:08.117 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:25:08.117 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:25:08.117 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
 ]]></system-out>
-  <system-err><![CDATA[[2026.05.30 01:14:58] (Coverage  WARN): Error during class instrumentation: org/springframework/web/servlet/config/annotation/WebMvcConfigurationSupport: java.lang.NoClassDefFoundError: jakarta/validation/ValidatorFactory
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.CronoEdu.auth.infraestructure.security.EncrypterGatewayImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:15:00.946Z" hostname="AAA" time="0.606">
+<testsuite name="com.CronoEdu.auth.infraestructure.security.EncrypterGatewayImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-05-30T13:25:08.371Z" hostname="AAA" time="0.634">
   <properties/>
-  <testcase name="checkPass_DeberiaRetornarFalse_CuandoNoCoincide()" classname="com.CronoEdu.auth.infraestructure.security.EncrypterGatewayImplTest" time="0.234"/>
-  <testcase name="checkPass_DeberiaRetornarTrue_CuandoCoincide()" classname="com.CronoEdu.auth.infraestructure.security.EncrypterGatewayImplTest" time="0.253"/>
+  <testcase name="checkPass_DeberiaRetornarFalse_CuandoNoCoincide()" classname="com.CronoEdu.auth.infraestructure.security.EncrypterGatewayImplTest" time="0.282"/>
+  <testcase name="checkPass_DeberiaRetornarTrue_CuandoCoincide()" classname="com.CronoEdu.auth.infraestructure.security.EncrypterGatewayImplTest" time="0.214"/>
   <testcase name="checkPass_DeberiaRetornarFalse_CuandoPassBDTieneOtroFormato()" classname="com.CronoEdu.auth.infraestructure.security.EncrypterGatewayImplTest" time="0.001"/>
-  <testcase name="encrypt_DeberiaEncriptarPassword()" classname="com.CronoEdu.auth.infraestructure.security.EncrypterGatewayImplTest" time="0.107"/>
-  <system-out><![CDATA[01:15:01.443 [Test worker] WARN org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder -- Encoded password does not look like BCrypt
+  <testcase name="encrypt_DeberiaEncriptarPassword()" classname="com.CronoEdu.auth.infraestructure.security.EncrypterGatewayImplTest" time="0.131"/>
+  <system-out><![CDATA[08:25:08.873 [Test worker] WARN org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder -- Encoded password does not look like BCrypt
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

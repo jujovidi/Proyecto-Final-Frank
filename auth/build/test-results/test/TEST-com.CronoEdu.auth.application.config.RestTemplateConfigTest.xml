@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.CronoEdu.auth.application.config.RestTemplateConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:14:55.475Z" hostname="AAA" time="0.996">
+<testsuite name="com.CronoEdu.auth.application.config.RestTemplateConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-30T13:25:04.410Z" hostname="AAA" time="0.513">
   <properties/>
-  <testcase name="restTemplate_DeberiaCrearBean()" classname="com.CronoEdu.auth.application.config.RestTemplateConfigTest" time="0.993"/>
+  <testcase name="restTemplate_DeberiaCrearBean()" classname="com.CronoEdu.auth.application.config.RestTemplateConfigTest" time="0.51"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

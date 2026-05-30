@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.CronoEdu.notification.application.config.CorsConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:10:33.537Z" hostname="AAA" time="0.166">
+<testsuite name="com.CronoEdu.notification.application.config.CorsConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-30T13:26:08.368Z" hostname="AAA" time="0.175">
   <properties/>
-  <testcase name="corsConfigurer_DeberiaCrearBean()" classname="com.CronoEdu.notification.application.config.CorsConfigTest" time="0.085"/>
+  <testcase name="corsConfigurer_DeberiaCrearBean()" classname="com.CronoEdu.notification.application.config.CorsConfigTest" time="0.084"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

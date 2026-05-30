@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:10:29.039Z" hostname="AAA" time="0.31">
+<testsuite name="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-05-30T13:26:11.012Z" hostname="AAA" time="0.178">
   <properties/>
-  <testcase name="reiniciar_DeberiaPonerCiclosACero_CuandoEstudianteExiste()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.092"/>
-  <testcase name="completarCiclo_DeberiaIncrementar_CuandoEstudianteExiste()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.053"/>
-  <testcase name="completarCiclo_DeberiaIncrementar_CuandoEstudianteNoExiste()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.029"/>
-  <testcase name="completarCiclo_DeberiaLanzarExcepcion_CuandoCedulaEsVacia()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.012"/>
-  <testcase name="reiniciar_DeberiaLanzarExcepcion_CuandoCedulaEsVacia()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.025"/>
-  <testcase name="reiniciar_DeberiaLanzarExcepcion_CuandoCedulaEsNull()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.007"/>
-  <testcase name="reiniciar_DeberiaCrearYCrear_CuandoEstudianteNoExiste()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.006"/>
+  <testcase name="reiniciar_DeberiaPonerCiclosACero_CuandoEstudianteExiste()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.084"/>
+  <testcase name="completarCiclo_DeberiaIncrementar_CuandoEstudianteExiste()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.009"/>
+  <testcase name="completarCiclo_DeberiaIncrementar_CuandoEstudianteNoExiste()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.015"/>
+  <testcase name="completarCiclo_DeberiaLanzarExcepcion_CuandoCedulaEsVacia()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.006"/>
+  <testcase name="reiniciar_DeberiaLanzarExcepcion_CuandoCedulaEsVacia()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.005"/>
+  <testcase name="reiniciar_DeberiaLanzarExcepcion_CuandoCedulaEsNull()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.004"/>
+  <testcase name="reiniciar_DeberiaCrearYCrear_CuandoEstudianteNoExiste()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.005"/>
   <testcase name="obtenerEstado_DeberiaRetornarPomodoro_CuandoEstudianteExiste()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.008"/>
-  <testcase name="completarCiclo_DeberiaLanzarExcepcion_CuandoCedulaEsNull()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.01"/>
-  <testcase name="obtenerEstado_DeberiaLanzarExcepcion_CuandoCedulaEsNull()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.004"/>
+  <testcase name="completarCiclo_DeberiaLanzarExcepcion_CuandoCedulaEsNull()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.004"/>
+  <testcase name="obtenerEstado_DeberiaLanzarExcepcion_CuandoCedulaEsNull()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.003"/>
   <testcase name="obtenerEstado_DeberiaLanzarExcepcion_CuandoCedulaEsBlank()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.004"/>
-  <testcase name="obtenerEstado_DeberiaLanzarExcepcion_CuandoCedulaEsVacia()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.015"/>
-  <testcase name="obtenerEstado_DeberiaCrearNuevo_CuandoEstudianteNoExiste()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.011"/>
+  <testcase name="obtenerEstado_DeberiaLanzarExcepcion_CuandoCedulaEsVacia()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.003"/>
+  <testcase name="obtenerEstado_DeberiaCrearNuevo_CuandoEstudianteNoExiste()" classname="com.CronoEdu.pomodoro.domine.usecase.PomodoroUsecaseTest" time="0.009"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

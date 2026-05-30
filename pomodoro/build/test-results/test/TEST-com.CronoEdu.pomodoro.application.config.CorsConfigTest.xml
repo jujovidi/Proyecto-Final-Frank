@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.CronoEdu.pomodoro.application.config.CorsConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:10:24.788Z" hostname="AAA" time="3.708">
+<testsuite name="com.CronoEdu.pomodoro.application.config.CorsConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-30T13:26:07.695Z" hostname="AAA" time="2.888">
   <properties/>
-  <testcase name="corsConfigurer_DeberiaCrearBean()" classname="com.CronoEdu.pomodoro.application.config.CorsConfigTest" time="3.658"/>
+  <testcase name="corsConfigurer_DeberiaCrearBean()" classname="com.CronoEdu.pomodoro.application.config.CorsConfigTest" time="2.843"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (C:\Users\lucas\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.8\f09415827a71be7ed621c7bd02550678f28bc81c\byte-buddy-agent-1.17.8.jar)

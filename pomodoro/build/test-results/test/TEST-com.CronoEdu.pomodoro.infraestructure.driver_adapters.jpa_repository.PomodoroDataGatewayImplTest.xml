@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.CronoEdu.pomodoro.infraestructure.driver_adapters.jpa_repository.PomodoroDataGatewayImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:10:29.408Z" hostname="AAA" time="0.781">
+<testsuite name="com.CronoEdu.pomodoro.infraestructure.driver_adapters.jpa_repository.PomodoroDataGatewayImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-05-30T13:26:11.199Z" hostname="AAA" time="0.513">
   <properties/>
-  <testcase name="buscarPorEstudiante_DeberiaRetornar_CuandoExiste()" classname="com.CronoEdu.pomodoro.infraestructure.driver_adapters.jpa_repository.PomodoroDataGatewayImplTest" time="0.666"/>
-  <testcase name="guardar_DeberiaGuardarYRetornar()" classname="com.CronoEdu.pomodoro.infraestructure.driver_adapters.jpa_repository.PomodoroDataGatewayImplTest" time="0.048"/>
-  <testcase name="buscarPorEstudiante_DeberiaLanzarExcepcion_CuandoNoExiste()" classname="com.CronoEdu.pomodoro.infraestructure.driver_adapters.jpa_repository.PomodoroDataGatewayImplTest" time="0.016"/>
+  <testcase name="buscarPorEstudiante_DeberiaRetornar_CuandoExiste()" classname="com.CronoEdu.pomodoro.infraestructure.driver_adapters.jpa_repository.PomodoroDataGatewayImplTest" time="0.463"/>
+  <testcase name="guardar_DeberiaGuardarYRetornar()" classname="com.CronoEdu.pomodoro.infraestructure.driver_adapters.jpa_repository.PomodoroDataGatewayImplTest" time="0.019"/>
+  <testcase name="buscarPorEstudiante_DeberiaLanzarExcepcion_CuandoNoExiste()" classname="com.CronoEdu.pomodoro.infraestructure.driver_adapters.jpa_repository.PomodoroDataGatewayImplTest" time="0.01"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

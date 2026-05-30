@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.CronoEdu.notification.application.service.NotificacionServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:10:33.804Z" hostname="AAA" time="4.493">
+<testsuite name="com.CronoEdu.notification.application.service.NotificacionServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-05-30T13:26:08.645Z" hostname="AAA" time="3.737">
   <properties/>
-  <testcase name="procesar_DeberiaEnviarEmail_CuandoTipoEsDesconocido()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="4.391"/>
-  <testcase name="procesar_NoDeberiaEnviarEmail_CuandoEmailDisabled()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.006"/>
-  <testcase name="procesar_NoDeberiaEnviarEmail_CuandoEmailEsBlank()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.01"/>
-  <testcase name="procesar_NoDeberiaEnviarEmail_CuandoEmailEsVacio()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.005"/>
-  <testcase name="procesar_DeberiaEnviarEmail_CuandoTipoEsLogin()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.015"/>
-  <testcase name="procesar_DeberiaEnviarEmail_CuandoTipoEsEliminacion()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.012"/>
-  <testcase name="procesar_NoDeberiaLanzarExcepcion_CuandoMailSenderFalla()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.016"/>
-  <testcase name="procesar_DeberiaEnviarEmail_CuandoTipoEsRegistro()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.008"/>
-  <testcase name="procesar_DeberiaEnviarEmail_CuandoTipoEsActualizacion()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.006"/>
+  <testcase name="procesar_DeberiaEnviarEmail_CuandoTipoEsDesconocido()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="3.615"/>
+  <testcase name="procesar_NoDeberiaEnviarEmail_CuandoEmailDisabled()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.009"/>
+  <testcase name="procesar_NoDeberiaEnviarEmail_CuandoEmailEsBlank()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.02"/>
+  <testcase name="procesar_NoDeberiaEnviarEmail_CuandoEmailEsVacio()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.006"/>
+  <testcase name="procesar_DeberiaEnviarEmail_CuandoTipoEsLogin()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.009"/>
+  <testcase name="procesar_DeberiaEnviarEmail_CuandoTipoEsEliminacion()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.011"/>
+  <testcase name="procesar_NoDeberiaLanzarExcepcion_CuandoMailSenderFalla()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.018"/>
+  <testcase name="procesar_DeberiaEnviarEmail_CuandoTipoEsRegistro()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.012"/>
+  <testcase name="procesar_DeberiaEnviarEmail_CuandoTipoEsActualizacion()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.007"/>
   <testcase name="procesar_NoDeberiaEnviarEmail_CuandoEmailEsNull()" classname="com.CronoEdu.notification.application.service.NotificacionServiceTest" time="0.008"/>
   <system-out><![CDATA[Notificacion recibida - Tipo: OTRO, Email: estudiante@universidad.edu, Mensaje: Mensaje generico
 Email enviado a: estudiante@universidad.edu

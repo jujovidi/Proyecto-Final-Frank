@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.CronoEdu.notification.infraestructure.entry_points.NotificacionControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:10:38.300Z" hostname="AAA" time="3.338">
+<testsuite name="com.CronoEdu.notification.infraestructure.entry_points.NotificacionControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-05-30T13:26:12.390Z" hostname="AAA" time="2.569">
   <properties/>
-  <testcase name="enviar_DeberiaRetornar200_CuandoExitoso()" classname="com.CronoEdu.notification.infraestructure.entry_points.NotificacionControllerTest" time="3.303"/>
-  <testcase name="enviar_DeberiaManejarExcepcion()" classname="com.CronoEdu.notification.infraestructure.entry_points.NotificacionControllerTest" time="0.029"/>
-  <system-out><![CDATA[01:10:40.736 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:10:40.773 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:10:40.792 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 13 ms
-01:10:41.625 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
-01:10:41.626 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
-01:10:41.626 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+  <testcase name="enviar_DeberiaRetornar200_CuandoExitoso()" classname="com.CronoEdu.notification.infraestructure.entry_points.NotificacionControllerTest" time="2.536"/>
+  <testcase name="enviar_DeberiaManejarExcepcion()" classname="com.CronoEdu.notification.infraestructure.entry_points.NotificacionControllerTest" time="0.028"/>
+  <system-out><![CDATA[08:26:14.403 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:26:14.408 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:26:14.414 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 5 ms
+08:26:14.948 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+08:26:14.948 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+08:26:14.948 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
