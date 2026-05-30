@@ -34,6 +34,13 @@ class NotificacionControllerTest {
     }
 
     @Test
+    void health_DeberiaRetornar200() throws Exception {
+        mockMvc.perform(get("/health"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("OK"));
+    }
+
+    @Test
     void enviar_DeberiaRetornar200_CuandoExitoso() throws Exception {
         doNothing().when(notificacionService).procesar(any(Notificacion.class));
 

@@ -8,13 +8,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/notificacion")
 @RequiredArgsConstructor
 public class NotificacionController {
 
     private final NotificacionService notificacionService;
 
-    @PostMapping("/enviar")
+    @GetMapping("/health")
+    public ResponseEntity<String> health() {
+        return ResponseEntity.ok("OK");
+    }
+
+    @PostMapping("/api/notificacion/enviar")
     public ResponseEntity<String> recibirNotificacion(@RequestBody Notificacion notificacion) {
         try {
             notificacionService.procesar(notificacion);
