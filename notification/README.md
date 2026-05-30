@@ -1,7 +1,7 @@
 # Notificaciones — CronoEdu
 
 Microservicio de notificaciones con arquitectura limpia (3 capas) y envío de
-correo electrónico (JavaMail) + SMS (Twilio o mock).
+correo electrónico (JavaMail) + SMS (Twilio).
 
 ---
 
@@ -124,27 +124,10 @@ Notification MS (dominio)
         ↓
 Notification MS (infraestructura)
   ├── EmailJavaMailSender  (EMAIL)
-  └── SmsMockSender / SmsTwilioSender (SMS)
+  └── SmsTwilioSender (SMS)
 ```
 
 ---
-
-## Perfiles de Spring
-
-| Perfil     | SMS activo                      |
-|------------|---------------------------------|
-| `dev`      | `SmsMockSender` — imprime en consola |
-| `prod`     | `SmsTwilioSender` — SMS reales con Twilio |
-
-### Uso
-
-```bash
-# Desarrollo (default)
-./gradlew bootRun
-
-# Producción
-./gradlew bootRun --args='--spring.profiles.active=prod'
-```
 
 ---
 
@@ -159,7 +142,7 @@ spring.mail.port=587
 spring.mail.username=correo@gmail.com
 spring.mail.password=contraseña
 
-# Twilio (solo necesario en perfil prod)
+# Twilio
 twilio.account-sid=ACxxxxxxxxxx
 twilio.auth-token=xxxxxxxxxx
 twilio.phone-number=+12025551234
@@ -185,7 +168,6 @@ com.CronoEdu.notification/
     ├── email/
     │   └── EmailJavaMailSender.java
     ├── sms/
-    │   ├── SmsMockSender.java
     │   └── SmsTwilioSender.java
     └── evento/
         ├── NotificacionListener.java
