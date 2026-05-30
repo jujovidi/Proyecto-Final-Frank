@@ -51,6 +51,13 @@ public class MateriaUsecase {
         return materiaGateway.buscarPorDia(dia);
     }
 
+    public List<Materia> buscarPorEstudiante(String estudianteCedula) {
+        if (estudianteCedula == null || estudianteCedula.isBlank()) {
+            throw new IllegalArgumentException("La cedula del estudiante es obligatoria");
+        }
+        return materiaGateway.buscarPorEstudiante(estudianteCedula);
+    }
+
     public void eliminarMateria(String id) {
         if (id == null || id.isBlank()) {
             throw new IllegalArgumentException("El ID de la materia es obligatorio para eliminarla");
@@ -77,6 +84,10 @@ public class MateriaUsecase {
 
         if (materia.getSalon() == null || materia.getSalon().isBlank()) {
             throw new IllegalArgumentException("El salon es obligatorio");
+        }
+
+        if (materia.getEstudianteCedula() == null || materia.getEstudianteCedula().isBlank()) {
+            throw new IllegalArgumentException("La cedula del estudiante es obligatoria");
         }
 
         if (materia.getHorarios() == null || materia.getHorarios().isEmpty()) {

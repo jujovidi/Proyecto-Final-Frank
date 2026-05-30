@@ -21,6 +21,7 @@ public class MateriaMapper {
         data.setNombre(materia.getNombre());
         data.setDocente(materia.getDocente());
         data.setSalon(materia.getSalon());
+        data.setEstudianteCedula(materia.getEstudianteCedula());
 
         if (materia.getHorarios() != null) {
             List<HorarioData> horariosData = new ArrayList<>();
@@ -48,6 +49,7 @@ public class MateriaMapper {
         materia.setNombre(materiaData.getNombre());
         materia.setDocente(materiaData.getDocente());
         materia.setSalon(materiaData.getSalon());
+        materia.setEstudianteCedula(materiaData.getEstudianteCedula());
 
         if (materiaData.getHorarios() != null) {
             List<Horario> horarios = new ArrayList<>();

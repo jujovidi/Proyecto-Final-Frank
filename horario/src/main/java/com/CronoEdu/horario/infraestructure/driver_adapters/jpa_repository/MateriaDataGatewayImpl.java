@@ -66,6 +66,14 @@ public class MateriaDataGatewayImpl implements MateriaGateway {
     }
 
     @Override
+    public List<Materia> buscarPorEstudiante(String estudianteCedula) {
+        List<MateriaData> porEstudiante = materiaDataJpaRepository.findByEstudianteCedula(estudianteCedula);
+        return porEstudiante.stream()
+                .map(materiaMapper::toMateria)
+                .toList();
+    }
+
+    @Override
     public void eliminarMateria(String id) {
         if (!materiaDataJpaRepository.existsById(id)) {
             throw new RuntimeException("No se puede eliminar: materia no encontrada con ID: " + id);

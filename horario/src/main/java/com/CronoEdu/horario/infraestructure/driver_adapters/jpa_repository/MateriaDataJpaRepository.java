@@ -11,4 +11,6 @@ public interface MateriaDataJpaRepository extends JpaRepository<MateriaData, Str
     @Query("SELECT DISTINCT m FROM MateriaData m JOIN FETCH m.horarios h WHERE h.diaSemana = :dia")
     List<MateriaData> findByHorariosDiaSemana(@Param("dia") String diaSemana);
 
+    List<MateriaData> findByEstudianteCedula(String estudianteCedula);
+
 }

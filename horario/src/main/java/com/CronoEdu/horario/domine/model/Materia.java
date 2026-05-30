@@ -17,6 +17,7 @@ public class Materia {
     private String nombre;
     private String docente;
     private String salon;
+    private String estudianteCedula;
     private List<Horario> horarios;
 
 }

@@ -16,6 +16,8 @@ public interface MateriaGateway {
 
     List<Materia> buscarPorDia(String diaSemana);
 
+    List<Materia> buscarPorEstudiante(String estudianteCedula);
+
     void eliminarMateria(String id);
 
 }

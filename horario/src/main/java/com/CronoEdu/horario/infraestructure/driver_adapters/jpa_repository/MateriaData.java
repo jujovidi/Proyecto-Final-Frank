@@ -27,6 +27,9 @@ public class MateriaData {
     @Column(nullable = false, length = 50)
     private String salon;
 
+    @Column(length = 20)
+    private String estudianteCedula;
+
     @OneToMany(mappedBy = "materia", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<HorarioData> horarios;
 

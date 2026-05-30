@@ -91,6 +91,21 @@ public class MateriaController {
         }
     }
 
+    @GetMapping("/estudiante/{cedula}")
+    public ResponseEntity<?> buscarPorEstudiante(@PathVariable String cedula) {
+        if (cedula == null || cedula.isBlank()) {
+            return new ResponseEntity<>("La cedula del estudiante es obligatoria", HttpStatus.BAD_REQUEST);
+        }
+        try {
+            List<Materia> materias = materiaUsecase.buscarPorEstudiante(cedula);
+            return new ResponseEntity<>(materias, HttpStatus.OK);
+        } catch (IllegalArgumentException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        } catch (Exception e) {
+            return new ResponseEntity<>("Error interno al buscar materias por estudiante", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
     @GetMapping("/dia/{diaSemana}")
     public ResponseEntity<?> buscarPorDia(@PathVariable String diaSemana) {
         try {
