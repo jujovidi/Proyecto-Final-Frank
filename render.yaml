@@ -32,24 +32,15 @@ services:
       - key: PORT
         value: "8081"
       - key: SPRING_DATASOURCE_URL
-        fromService:
-          type: postgresql
-          name: cronoedu-db
-          property: connectionString
+        sync: false
       - key: SPRING_DATASOURCE_USERNAME
-        fromService:
-          type: postgresql
-          name: cronoedu-db
-          property: user
+        sync: false
       - key: SPRING_DATASOURCE_PASSWORD
-        fromService:
-          type: postgresql
-          name: cronoedu-db
-          property: password
+        sync: false
       - key: SPRING_JPA_SHOW_SQL
         value: "false"
       - key: APP_NOTIFICATION_URL
-        value: https://cronoedu-notification.onrender.com/api/notificacion/enviar
+        sync: false
 
   - type: web
     name: cronoedu-horario
@@ -60,20 +51,11 @@ services:
       - key: PORT
         value: "8082"
       - key: SPRING_DATASOURCE_URL
-        fromService:
-          type: postgresql
-          name: cronoedu-db
-          property: connectionString
+        sync: false
       - key: SPRING_DATASOURCE_USERNAME
-        fromService:
-          type: postgresql
-          name: cronoedu-db
-          property: user
+        sync: false
       - key: SPRING_DATASOURCE_PASSWORD
-        fromService:
-          type: postgresql
-          name: cronoedu-db
-          property: password
+        sync: false
       - key: SPRING_JPA_SHOW_SQL
         value: "false"
 
@@ -86,20 +68,11 @@ services:
       - key: PORT
         value: "8084"
       - key: SPRING_DATASOURCE_URL
-        fromService:
-          type: postgresql
-          name: cronoedu-db
-          property: connectionString
+        sync: false
       - key: SPRING_DATASOURCE_USERNAME
-        fromService:
-          type: postgresql
-          name: cronoedu-db
-          property: user
+        sync: false
       - key: SPRING_DATASOURCE_PASSWORD
-        fromService:
-          type: postgresql
-          name: cronoedu-db
-          property: password
+        sync: false
       - key: SPRING_JPA_SHOW_SQL
         value: "false"
 
@@ -119,9 +92,3 @@ services:
         value: juanbobadilla0104@gmail.com
       - key: APP_NOTIFICATION_EMAIL_ENABLED
         value: "true"
-
-  - type: postgresql
-    name: cronoedu-db
-    plan: free
-    databaseName: CronoEdu
-    ipAllowList: []
