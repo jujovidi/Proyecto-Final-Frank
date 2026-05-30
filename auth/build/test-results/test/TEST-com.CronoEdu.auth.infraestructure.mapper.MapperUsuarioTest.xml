@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.CronoEdu.auth.infraestructure.mapper.MapperUsuarioTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:15:00.669Z" hostname="AAA" time="0.014">
+  <properties/>
+  <testcase name="toData_DeberiaMapearCorrectamente()" classname="com.CronoEdu.auth.infraestructure.mapper.MapperUsuarioTest" time="0.001"/>
+  <testcase name="toUsuario_DeberiaMapearCorrectamente()" classname="com.CronoEdu.auth.infraestructure.mapper.MapperUsuarioTest" time="0.001"/>
+  <testcase name="toUsuario_DeberiaRetornarNull_CuandoDataEsNull()" classname="com.CronoEdu.auth.infraestructure.mapper.MapperUsuarioTest" time="0.005"/>
+  <testcase name="toData_DeberiaRetornarNull_CuandoUsuarioEsNull()" classname="com.CronoEdu.auth.infraestructure.mapper.MapperUsuarioTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

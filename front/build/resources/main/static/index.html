@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CronoEdu - Horario Universitario</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- LOGIN VIEW -->
+        <div id="view-login" class="view active">
+            <div class="auth-container">
+                <div class="auth-card">
+                    <h1>CronoEdu</h1>
+                    <p class="subtitle">Horario Universitario</p>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <input type="email" id="login-correo" placeholder="Correo institucional" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="login-password" placeholder="Contrasena" required>
+                        </div>
+                        <p id="login-error" class="error-msg"></p>
+                        <button type="submit" class="btn-primary btn-full">Iniciar Sesion</button>
+                    </form>
+                    <p class="auth-link">¿No tienes cuenta? <a href="#" id="btn-ir-registro">Registrate</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- REGISTER VIEW -->
+        <div id="view-register" class="view">
+            <div class="auth-container">
+                <div class="auth-card">
+                    <h1>Registro</h1>
+                    <p class="subtitle">Nuevo Estudiante</p>
+                    <form id="register-form">
+                        <div class="form-group">
+                            <input type="text" id="reg-cedula" placeholder="Cedula" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="reg-nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="reg-carrera" placeholder="Carrera" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="reg-ubicacion" placeholder="Ubicacion semestral (ej: 3er Semestre)" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="reg-correo" placeholder="Correo institucional" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="reg-password" placeholder="Contrasena" required>
+                        </div>
+                        <p id="register-error" class="error-msg"></p>
+                        <button type="submit" class="btn-primary btn-full">Registrarse</button>
+                    </form>
+                    <p class="auth-link">¿Ya tienes cuenta? <a href="#" id="btn-ir-login">Inicia sesion</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DASHBOARD (after login) -->
+        <div id="view-dashboard" class="view">
+            <header>
+                <div>
+                    <h1>CronoEdu</h1>
+                    <p id="header-estudiante" class="header-sub"></p>
+                </div>
+                <button id="btn-cerrar-sesion" class="btn-secondary">Cerrar Sesion</button>
+            </header>
+
+            <nav class="tabs">
+                <button class="tab active" data-tab="horario">Horario</button>
+                <button class="tab" data-tab="pomodoro">Pomodoro</button>
+                <button class="tab" data-tab="perfil">Perfil</button>
+            </nav>
+
+            <main>
+                <!-- TAB: HORARIO -->
+                <div id="tab-horario" class="tab-content active">
+                    <div class="toolbar">
+                        <button id="btn-agregar-materia" class="btn-primary">+ Agregar Materia</button>
+                    </div>
+                    <div id="calendar-container">
+                        <div id="calendar-grid"></div>
+                    </div>
+                </div>
+
+                <!-- TAB: POMODORO -->
+                <div id="tab-pomodoro" class="tab-content">
+                    <div class="pomodoro-container">
+                        <h2>Pomodoro</h2>
+                        <p class="pomodoro-sub">25 min estudio · 5 min descanso</p>
+                        <div class="pomodoro-timer" id="pomodoro-timer">25:00</div>
+                        <p class="pomodoro-fase" id="pomodoro-fase">ESTUDIO</p>
+                        <div class="pomodoro-controls">
+                            <button id="btn-pomodoro-iniciar" class="btn-primary">Iniciar</button>
+                            <button id="btn-pomodoro-pausa" class="btn-secondary" disabled>Pausa</button>
+                            <button id="btn-pomodoro-reiniciar" class="btn-cancel">Reiniciar</button>
+                        </div>
+                        <div class="pomodoro-stats">
+                            <p>Ciclos completados hoy: <strong id="pomodoro-ciclos">0</strong></p>
+                            <button id="btn-pomodoro-reset-ciclos" class="btn-cancel btn-sm">Reiniciar contador</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB: PERFIL -->
+                <div id="tab-perfil" class="tab-content">
+                    <div class="perfil-container">
+                        <h2>Mi Perfil</h2>
+                        <form id="perfil-form">
+                            <div class="form-group">
+                                <label>Cedula</label>
+                                <input type="text" id="perfil-cedula" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label>Nombre</label>
+                                <input type="text" id="perfil-nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Carrera</label>
+                                <input type="text" id="perfil-carrera" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Ubicacion Semestral</label>
+                                <input type="text" id="perfil-ubicacion" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Correo Institucional</label>
+                                <input type="email" id="perfil-correo" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Nueva Contrasena (dejar vacio para mantener)</label>
+                                <input type="password" id="perfil-password" placeholder="Nueva contrasena">
+                            </div>
+                            <p id="perfil-error" class="error-msg"></p>
+                            <p id="perfil-success" class="success-msg"></p>
+                            <div class="perfil-actions">
+                                <button type="submit" class="btn-primary">Guardar Cambios</button>
+                                <button type="button" id="btn-eliminar-cuenta" class="btn-danger">Eliminar Cuenta</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- MODAL MATERIA -->
+    <div id="modal-overlay" class="hidden">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="modal-title">Nueva Materia</h2>
+                <button id="btn-cerrar-modal" class="btn-close">&times;</button>
+            </div>
+            <form id="materia-form">
+                <input type="hidden" id="materia-id">
+                <div class="form-group">
+                    <label>Nombre de la Materia</label>
+                    <input type="text" id="materia-nombre" required placeholder="Ej: Calculo I">
+                </div>
+                <div class="form-group">
+                    <label>Docente</label>
+                    <input type="text" id="materia-docente" required placeholder="Ej: Juan Perez">
+                </div>
+                <div class="form-group">
+                    <label>Salon</label>
+                    <input type="text" id="materia-salon" required placeholder="Ej: A-101">
+                </div>
+                <div class="form-group">
+                    <label>Horarios</label>
+                    <div id="horarios-container">
+                        <div class="horario-entry">
+                            <select class="horario-dia" required>
+                                <option value="">Dia</option>
+                                <option value="LUNES">Lunes</option>
+                                <option value="MARTES">Martes</option>
+                                <option value="MIERCOLES">Miercoles</option>
+                                <option value="JUEVES">Jueves</option>
+                                <option value="VIERNES">Viernes</option>
+                                <option value="SABADO">Sabado</option>
+                            </select>
+                            <input type="time" class="horario-inicio" required value="08:00">
+                            <input type="time" class="horario-fin" required value="10:00">
+                            <button type="button" class="btn-remove-horario">&times;</button>
+                        </div>
+                    </div>
+                    <button type="button" id="btn-agregar-horario" class="btn-secondary btn-sm">+ Agregar horario</button>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" id="btn-cancelar" class="btn-cancel">Cancelar</button>
+                    <button type="submit" class="btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

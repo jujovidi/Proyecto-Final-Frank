@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.CronoEdu.pomodoro.infraestructure.mapper.PomodoroMapperTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:10:34.777Z" hostname="AAA" time="0.017">
+  <properties/>
+  <testcase name="toData_DeberiaRetornarNull_CuandoDomainEsNull()" classname="com.CronoEdu.pomodoro.infraestructure.mapper.PomodoroMapperTest" time="0.002"/>
+  <testcase name="toData_DeberiaMapearCorrectamente()" classname="com.CronoEdu.pomodoro.infraestructure.mapper.PomodoroMapperTest" time="0.002"/>
+  <testcase name="toDomain_DeberiaRetornarNull_CuandoDataEsNull()" classname="com.CronoEdu.pomodoro.infraestructure.mapper.PomodoroMapperTest" time="0.001"/>
+  <testcase name="toDomain_DeberiaMapearCorrectamente()" classname="com.CronoEdu.pomodoro.infraestructure.mapper.PomodoroMapperTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

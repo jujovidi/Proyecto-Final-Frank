@@ -28,8 +28,11 @@ dependencies {
 	testCompileOnly 'org.projectlombok:lombok'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	testAnnotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.mockito:mockito-junit-jupiter:5.15.2'
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
+	def uniqueId = UUID.randomUUID().toString()
+	binaryResultsDirectory = layout.buildDirectory.dir("test-results/test/binary-${uniqueId}")
 }

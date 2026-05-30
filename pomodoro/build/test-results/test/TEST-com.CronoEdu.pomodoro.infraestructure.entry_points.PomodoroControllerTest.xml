@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.CronoEdu.pomodoro.infraestructure.entry_points.PomodoroControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:10:30.207Z" hostname="AAA" time="4.568">
+  <properties/>
+  <testcase name="reiniciar_DeberiaRetornar400_CuandoIllegalArgument()" classname="com.CronoEdu.pomodoro.infraestructure.entry_points.PomodoroControllerTest" time="3.819"/>
+  <testcase name="completarCiclo_DeberiaRetornar400_CuandoIllegalArgument()" classname="com.CronoEdu.pomodoro.infraestructure.entry_points.PomodoroControllerTest" time="0.041"/>
+  <testcase name="reiniciar_DeberiaRetornar200()" classname="com.CronoEdu.pomodoro.infraestructure.entry_points.PomodoroControllerTest" time="0.465"/>
+  <testcase name="obtenerEstado_DeberiaRetornar400_CuandoIllegalArgument()" classname="com.CronoEdu.pomodoro.infraestructure.entry_points.PomodoroControllerTest" time="0.138"/>
+  <testcase name="obtenerEstado_DeberiaRetornar200_CuandoExiste()" classname="com.CronoEdu.pomodoro.infraestructure.entry_points.PomodoroControllerTest" time="0.046"/>
+  <testcase name="completarCiclo_DeberiaRetornar200()" classname="com.CronoEdu.pomodoro.infraestructure.entry_points.PomodoroControllerTest" time="0.038"/>
+  <system-out><![CDATA[01:10:33.589 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+01:10:33.598 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+01:10:33.606 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 7 ms
+01:10:34.073 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+01:10:34.073 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+01:10:34.074 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms
+01:10:34.121 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+01:10:34.121 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+01:10:34.121 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+01:10:34.655 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+01:10:34.656 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+01:10:34.657 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+01:10:34.717 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+01:10:34.717 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+01:10:34.718 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+01:10:34.760 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+01:10:34.761 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+01:10:34.762 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.CronoEdu.auth.infraestructure.driver_adapters.jpa_repository.UsuarioDataGatewayImplTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-05-30T06:14:58.271Z" hostname="AAA" time="0.447">
+  <properties/>
+  <testcase name="buscarPorCorreo_DeberiaRetornar_CuandoExiste()" classname="com.CronoEdu.auth.infraestructure.driver_adapters.jpa_repository.UsuarioDataGatewayImplTest" time="0.374"/>
+  <testcase name="actualizar_DeberiaActualizar_CuandoExiste()" classname="com.CronoEdu.auth.infraestructure.driver_adapters.jpa_repository.UsuarioDataGatewayImplTest" time="0.014"/>
+  <testcase name="buscarPorCedula_DeberiaLanzarExcepcion_CuandoNoExiste()" classname="com.CronoEdu.auth.infraestructure.driver_adapters.jpa_repository.UsuarioDataGatewayImplTest" time="0.009"/>
+  <testcase name="eliminar_DeberiaLanzarExcepcion_CuandoNoExiste()" classname="com.CronoEdu.auth.infraestructure.driver_adapters.jpa_repository.UsuarioDataGatewayImplTest" time="0.007"/>
+  <testcase name="guardar_DeberiaGuardarYRetornar()" classname="com.CronoEdu.auth.infraestructure.driver_adapters.jpa_repository.UsuarioDataGatewayImplTest" time="0.005"/>
+  <testcase name="actualizar_DeberiaLanzarExcepcion_CuandoNoExiste()" classname="com.CronoEdu.auth.infraestructure.driver_adapters.jpa_repository.UsuarioDataGatewayImplTest" time="0.006"/>
+  <testcase name="buscarPorCorreo_DeberiaLanzarExcepcion_CuandoNoExiste()" classname="com.CronoEdu.auth.infraestructure.driver_adapters.jpa_repository.UsuarioDataGatewayImplTest" time="0.006"/>
+  <testcase name="buscarPorCedula_DeberiaRetornar_CuandoExiste()" classname="com.CronoEdu.auth.infraestructure.driver_adapters.jpa_repository.UsuarioDataGatewayImplTest" time="0.007"/>
+  <testcase name="eliminar_DeberiaEliminar_CuandoExiste()" classname="com.CronoEdu.auth.infraestructure.driver_adapters.jpa_repository.UsuarioDataGatewayImplTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
